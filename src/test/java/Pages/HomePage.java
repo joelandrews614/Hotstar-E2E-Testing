@@ -25,6 +25,13 @@ public class HomePage {
 		return ele.isDisplayed();
 	}
 	
+	public void clickMySpaceLink() {
+		if(isMySpaceLinkExists()) {
+			WebElement ele = dri.findElement(mySpaceLink);
+			ele.click();
+		}
+	}	
+	
 	public Boolean isExploreLinkExists() {
 		WebElement ele = dri.findElement(exploreLink);
 		return ele.isDisplayed();
